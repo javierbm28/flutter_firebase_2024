@@ -14,6 +14,8 @@ class _PaginaLoginState extends State<PaginaLogin> {
   final TextEditingController controllerEmail = TextEditingController();
   final TextEditingController controllerPassword = TextEditingController();
 
+  void ferLogin(){}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -118,7 +120,11 @@ class _PaginaLoginState extends State<PaginaLogin> {
                       const SizedBox(height: 10,),
             
                       //Boto Login
-                      BotoAuth()
+                      BotoAuth(
+                        text: "Login",
+                        onTap: ferLogin,
+
+                      )
                 ],
               ),
             ),
