@@ -22,7 +22,7 @@ class BotoAuth extends StatelessWidget {
         ),
         padding: EdgeInsets.symmetric(horizontal: 200,vertical: 20),
         child: Text(
-          "Login",
+          text,
           style: TextStyle(
             color: Colors.orange[100],
             fontWeight: FontWeight.bold,

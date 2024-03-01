@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_firebase_2024/auth/login_o_registre.dart';
 import 'package:flutter_firebase_2024/firebase_options.dart';
 import 'package:flutter_firebase_2024/pagines/pagina_login.dart';
 import 'package:flutter_firebase_2024/pagines/pagina_registre.dart';
@@ -20,7 +21,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PaginaLogin(),
+      home: LoginORegistrState(),
     );
   }
 }

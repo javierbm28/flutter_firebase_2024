@@ -3,8 +3,11 @@ import 'package:flutter_firebase_2024/components/boto_auth.dart';
 import 'package:flutter_firebase_2024/components/textfield_auth.dart';
 
 class PaginaLogin extends StatefulWidget {
-  const PaginaLogin({super.key});
-
+  final void Function() alFerClic;
+  const PaginaLogin({
+    super.key,
+    required this.alFerClic
+  });
   @override
   State<PaginaLogin> createState() => _PaginaLoginState();
 }
@@ -104,7 +107,7 @@ class _PaginaLoginState extends State<PaginaLogin> {
                             const Text("No Eres Miembro?"),
                             const SizedBox(width: 5,),
                             GestureDetector(
-                              onTap: (){},
+                              onTap: widget.alFerClic,
                               child: const Text(
                                 "Registrate",
                                 style: TextStyle(
